@@ -1,0 +1,56 @@
+/**
+ * This is boilerplate code for creating Redux container component that contain:
+ * 1. PropTypes validation setup
+ * 2. Redux Connect setup and binding action
+ * To use this code:
+ * 1. Rename ComponentName to your component
+ * 2. Replace return block in render function 
+ * 3. Add properties validation rules in ComponentName.propTypes
+ * 4. Mapping state to props in mapStateToProps function
+ * 4. Bind actions to props in mapDispatchToProps function
+ */
+
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+/* eslint-disable react/prefer-stateless-function */
+class ComponentName extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+  }
+
+  render() {
+    return (
+      <div>
+      </div>
+    );
+  }
+}
+
+ComponentName.propTypes = {
+  //myProp: PropTypes.string.isRequired,
+}
+
+/**
+ * Map state to props
+ * @param state: Represent state in redux store
+ * @param ownProps optional: Props being attach to this component
+ */
+function mapStateToProps(state, ownProps) {
+  return {
+    state: state, // Refer to quotes in root reducers
+  };
+}
+
+/**
+ * Map dispatch to props, determine what action available
+ * @param dispatch injected in connect function
+ */
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(actions, dispatch),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ComponentName);

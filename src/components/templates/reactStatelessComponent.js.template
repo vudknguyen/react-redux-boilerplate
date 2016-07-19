@@ -1,0 +1,21 @@
+/**
+ * This is boilerplate code for creating React stateless component that contain:
+ * 1. PropTypes validation setup
+ * To use this code:
+ * 1. Rename ComponentName to your component
+ * 2. Replace return block in render function 
+ * 3. Add properties validation rules in ComponentName.propTypes
+ */
+
+import React, { PropTypes } from 'react';
+
+const ComponentName = ({ props }) => (
+  <div>
+  </div>
+);
+
+ComponentName.propTypes = {
+  //myProps: PropTypes.array.isRequired,
+};
+
+export default ComponentName;
