@@ -1,4 +1,4 @@
-# react-redux-bolerplate
+# react-redux-boilerplate
 
 Ready to use boilerplate project with React Redux and Webpack 
 
