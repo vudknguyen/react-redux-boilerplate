@@ -50,8 +50,8 @@ npm run test:watch
 
 This project follow AirBnB ES6/React style guide. If you need more information about the rules, follow the reference bellow
 
-[AirBnB Style Guide for ES6](https://github.com/airbnb/javascript#ecmascript-6-styles)  
-[AirBnB Style Guide for React](https://github.com/airbnb/javascript/tree/master/react)
+[Airbnb Style Guide for ES6](https://github.com/airbnb/javascript#ecmascript-6-styles)  
+[Airbnb Style Guide for React](https://github.com/airbnb/javascript/tree/master/react)
 
 ## Project structure
 
